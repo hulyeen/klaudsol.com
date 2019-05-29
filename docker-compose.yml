@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  klaudsol.com:
+    image: ruby:2.6.2-slim
+    container_name: klaudsol.com 
+    volumes: 
+      - ".:/app"
+    ports:
+      - 8888:8888
+    command: ["/app/entrypoint.sh"] 
+
+
+
