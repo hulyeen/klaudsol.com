@@ -176,7 +176,8 @@ fieldset {
     width: 3px;
     height: 40px;
     top: -77%;
-    background-color: rgb(255, 101, 165);
+    background-color: rgb(185, 184, 114);
+    /*background-color: rgb(255, 101, 165);*/
 }
 
 .section-title h2 {
@@ -303,7 +304,8 @@ fieldset {
 }
 
 .mainmenu .navbar-nav li.active a {
-    color: rgb(255,113,143);
+    color: rgb(185, 184, 114);
+    /*color: rgb(255,113,143);*/
 }
 
 /* Mobile Nav css */
@@ -421,7 +423,8 @@ fieldset {
 }
 
 .hero-box:hover.hero-box span{
-    color: rgb(255,113,143);
+    color: rgb(185, 184, 114);
+    /*color: rgb(255,113,143);*/
 }
 
 .box-one:before,
@@ -1243,7 +1246,8 @@ fieldset {
     padding: 15px 50px;
     transition: all 0.3s ease;
     transform: translateX(50%);
-    background: rgb(255, 101, 165);
+    /*background: rgb(255, 101, 165);*/
+    background: rgb(185, 184, 114);
     border: 1px solid transparent;
 }
 
@@ -1420,7 +1424,8 @@ fieldset {
     margin-top: 30px;
     border: 1px solid transparent;
     transition: all 0.3s ease;
-    background: rgb(255, 101, 165);
+    /*background: rgb(255, 101, 165);*/
+    background: rgb(185, 184, 114)
 }
 
 #submitButton:hover {
@@ -1514,7 +1519,8 @@ fieldset {
     width: 3px;
     height: 40px;
     top: -77%;
-    background-color: rgb(255, 101, 165);
+    /*background-color: rgb(255, 101, 165);*/
+    background-color: rgb(185, 184, 114);
 }
 
 .footer-title h2 {
