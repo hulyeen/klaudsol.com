@@ -267,7 +267,7 @@
             callback: mailChimpResponse,
 
             // ADD YOUR MAILCHIMP URL BELOW HERE!
-            url: 'http://coderspoint.us14.list-manage.com/subscribe/post?u=e5d45c203261b0686dad32537&amp;id=d061f39c51'
+            url: 'https://klaudsol.us20.list-manage.com/subscribe/post?u=b43d7e77d3b7e79af32711f3b&amp;id=bc82edb110'
             
           });
 
