@@ -1254,7 +1254,8 @@ fieldset {
 .newsletter-form .mc-submit:hover {
     background: #fff;
     border: 1px solid #eee;
-    color: rgb(255, 101, 165);
+    /*color: rgb(255, 101, 165);*/
+    color: rgb(185, 184, 114);
 }
 
 .newsletter-form .mc-submit:focus {
@@ -1368,7 +1369,8 @@ fieldset {
 
 .contact-box span {
     font-size: 21px;
-    color: rgb(255, 101, 165);
+    /*color: rgb(255, 101, 165);*/
+    color: rgb(185, 184, 114);
     position: absolute;
     left: 25px;
     top: 26px;
@@ -1431,7 +1433,8 @@ fieldset {
 #submitButton:hover {
     background: #fff;
     border: 1px solid #eee;
-    color: rgb(255, 101, 165);
+    /*color: rgb(255, 101, 165);*/
+    color: rgb(185, 184, 114)
 }
 
 .success {
@@ -1544,7 +1547,8 @@ fieldset {
 }
 
 .footer-social a span:hover {
-    background-color: rgb(255, 101, 165);
+    /*background-color: rgb(255, 101, 165);*/
+    background-color: rgb(185, 184, 114);
     border-bottom: 0.5px solid transparent;
 }
 
@@ -1553,7 +1557,8 @@ fieldset {
 }
 
 .footer-area p a {
-    color: rgb(255, 101, 165);
+    /*color: rgb(255, 101, 165);*/
+    color: rgb(185, 184, 114);
 
 }
 
