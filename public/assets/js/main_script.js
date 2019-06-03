@@ -189,15 +189,17 @@
 /*-------------------------------------------------------------------------*
 *                       11. Google Map js                                 *
 *-------------------------------------------------------------------------*/
-      var myCenter = new google.maps.LatLng( 23.8028085, 90.4070036 );
+
+      var myCenter = new google.maps.LatLng(14.549341, 121.046583);
       function initialize(){
       var mapProp = {
-        zoom:14,
+        zoom:17,
         center:myCenter,
         scrollwheel: false,
-        mapTpeIdy:google.maps.MapTypeId.ROADMAP
+        mapTypeId:google.maps.MapTypeId.HYBRID
       };
           var map=new google.maps.Map(document.getElementById("contactgoogleMap"),mapProp);
+          var marker = new google.maps.Marker({position: myCenter, map: map});
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 
