@@ -20,3 +20,9 @@ Your machine is expected to have the following applications before starting the 
 * Open `localhost:8081` from your browser.
 
 # Deployment
+The klaudsol.com website is currently hosted via AWS Amplify. Thus, a simple
+push to the git repository is sufficient to trigger a redeploy.
+To redeploy:
+* Add all the changes you did: `git add <file1> <file2>`
+* Commit: `git commit -m '<Some useful message regarding this commit>'`
+
