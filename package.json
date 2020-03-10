@@ -1,0 +1,24 @@
+{
+  "name": "klaudsol.com",
+  "version": "1.0.0",
+  "description": "Klaudsol.com is the official website of KlaudSol Apps",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaudsol/klaudsol.com.git"
+  },
+  "author": "KlaudSol Philippines, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klaudsol/klaudsol.com/issues"
+  },
+  "homepage": "https://github.com/klaudsol/klaudsol.com#readme"
+}
