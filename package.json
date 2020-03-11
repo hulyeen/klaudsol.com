@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server public"
+    "start": "http-server public -p 8080"
   },
   "repository": {
     "type": "git",

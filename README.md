@@ -17,7 +17,7 @@ Your machine is expected to have the following applications before starting the 
 
 # Running from local machine
 * Run `npm run start` from the console.
-* Open `localhost:8081` from your browser.
+* Open `localhost:8080` from your browser.
 
 # Deployment
 The klaudsol.com website is currently hosted via AWS Amplify. Thus, a simple
