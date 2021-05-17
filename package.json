@@ -4,9 +4,9 @@
   "description": "Klaudsol.com is the official website of KlaudSol Apps",
   "main": "index.js",
   "dependencies": {
-    "http-server": "^0.12.1"
+    "http-server": "^0.12.1",
+    "serve": "^11.3.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server public -p 8080"
