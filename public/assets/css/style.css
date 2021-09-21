@@ -120,6 +120,11 @@ a:hover {
     text-decoration: none;
 }
 
+a.hover-black:hover {
+    color: #777;
+    text-decoration: none;
+}
+
 a:focus {
     outline: none;
     text-decoration: none;
@@ -648,7 +653,8 @@ fieldset {
 
 .filters li.active {
     color: #fff;
-    background-color: #ff65a5;
+    /*background-color: #ff65a5;*/
+    background: rgb(185, 184, 114);
 }
 
 .work-items .item {
@@ -675,16 +681,18 @@ fieldset {
     -ms-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
     -moz-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
     -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    /*
     border-right: 10px solid #c5e5e0;
     border-left: 10px solid #fcbcba;
     border-top: 10px solid #c5e5e0;
     border-bottom: 10px solid #c5e5e0;
+    */
 }
 
 .work-items .overlay:before {
     position: absolute;
     content: "";
-    background: #fcbcba;
+    /*background: #fcbcba;*/
     height: 10px;
     width: 53%;
     left: -9px;
@@ -694,7 +702,7 @@ fieldset {
 .work-items .overlay:after {
     position: absolute;
     content: "";
-    background: #fcbcba;
+    /*background: #fcbcba;*/
     height: 10px;
     width: 53%;
     bottom: -10px;
@@ -715,7 +723,7 @@ fieldset {
     content: "";
     width: 50px;
     height: 3px;
-    background-color: #ff65a5;
+    /*background-color: #ff65a5;*/
     left: 10px;
     top: -15px;
 }
