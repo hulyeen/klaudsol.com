@@ -310,7 +310,8 @@ fieldset {
 
 /* Mobile Nav css */
 .navbar-toggle .icon-bar {
-    background: rgb(255, 101, 165);
+    /*background: rgb(255, 101, 165);*/
+    background: rgb(185, 184, 114);
 }
 
 @media (max-width: 991px) {
@@ -325,7 +326,8 @@ fieldset {
         display: block;
     }
     .navbar-fixed-top .navbar-collapse {
-        background: rgb(255, 101, 165);
+        /*background: rgb(255, 101, 165);*/
+        background: rgb(185, 184, 114);
         margin-top: 25px;
         margin: 0 -15px;
     }
