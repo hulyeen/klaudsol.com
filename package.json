@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Klaudsol.com is the official website of KlaudSol Apps",
   "main": "index.js",
-  "dependencies": {
-    "http-server": "^0.12.1"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "http-server public -p 8080"
   },
@@ -18,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/klaudsol/klaudsol.com/issues"
   },
-  "homepage": "https://github.com/klaudsol/klaudsol.com#readme"
+  "homepage": "https://github.com/klaudsol/klaudsol.com#readme",
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  }
 }
