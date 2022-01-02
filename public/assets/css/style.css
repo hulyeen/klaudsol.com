@@ -1588,3 +1588,18 @@ fieldset {
 }
 
 
+.klaudsol-tech-icons {
+    /*width: 36px;*/
+    height: 45px;
+    display: block;
+    margin: auto;
+}
+
+a.klaudsol-tech-link {
+    color: #0f1d44;    
+}
+
+a.klaudsol-tech-link:hover {
+    color: #0f1d44;    
+}
+
