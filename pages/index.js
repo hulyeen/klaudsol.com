@@ -837,7 +837,7 @@ export default function Home() {
           <div className="contact-box">
             <span className="ti-comment" />
             <h3>Phone</h3>
-            <p>+63 2 618 5109</p>
+            <p>+63 2 7618 5109</p>
           </div>
           <div className="contact-box" style={{ height: 185 }}>
             <span className="ti-home" />
