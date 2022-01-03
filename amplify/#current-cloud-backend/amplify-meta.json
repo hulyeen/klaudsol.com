@@ -1,15 +1,22 @@
 {
-  "providers": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-klaudsolcom-dev-40720-authRole",
-      "UnauthRoleArn": "arn:aws:iam::357984781678:role/amplify-klaudsolcom-dev-40720-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::357984781678:role/amplify-klaudsolcom-dev-40720-authRole",
-      "Region": "ap-southeast-1",
-      "DeploymentBucketName": "amplify-klaudsolcom-dev-40720-deployment",
-      "UnauthRoleName": "amplify-klaudsolcom-dev-40720-unauthRole",
-      "StackName": "amplify-klaudsolcom-dev-40720",
-      "StackId": "arn:aws:cloudformation:ap-southeast-1:357984781678:stack/amplify-klaudsolcom-dev-40720/a842e9e0-6c4a-11ec-b578-026ca6728f9a",
-      "AmplifyAppId": "d2sdggv17so3yg"
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-klaudsol2-dev-54528-authRole",
+            "UnauthRoleArn": "arn:aws:iam::985017217656:role/amplify-klaudsol2-dev-54528-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::985017217656:role/amplify-klaudsol2-dev-54528-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-klaudsol2-dev-54528-deployment",
+            "UnauthRoleName": "amplify-klaudsol2-dev-54528-unauthRole",
+            "StackName": "amplify-klaudsol2-dev-54528",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:985017217656:stack/amplify-klaudsol2-dev-54528/5d9ffa50-6c58-11ec-ad27-0697ef138812",
+            "AmplifyAppId": "dngq1cpd9y8kg"
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd",
+            "lastPushTimeStamp": "2022-01-03T05:49:26.860Z"
+        }
     }
-  }
 }
