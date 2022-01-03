@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-klaudsolcom-dev-40720-authRole",
+      "UnauthRoleArn": "arn:aws:iam::357984781678:role/amplify-klaudsolcom-dev-40720-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::357984781678:role/amplify-klaudsolcom-dev-40720-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-klaudsolcom-dev-40720-deployment",
+      "UnauthRoleName": "amplify-klaudsolcom-dev-40720-unauthRole",
+      "StackName": "amplify-klaudsolcom-dev-40720",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:357984781678:stack/amplify-klaudsolcom-dev-40720/a842e9e0-6c4a-11ec-b578-026ca6728f9a",
+      "AmplifyAppId": "d2sdggv17so3yg"
+    }
+  }
+}
