@@ -1603,3 +1603,7 @@ a.klaudsol-tech-link:hover {
     color: #0f1d44;    
 }
 
+/* NextJS adjustments */
+#__next {
+    height: 100%;
+}
