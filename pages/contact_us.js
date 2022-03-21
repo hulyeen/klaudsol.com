@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import axios from 'axios';
-import {Button, Modal, ModalBody, ModalFooter} from 'reactstrap'
-export default function ContactUsForm(props){
+
+export default function ContactUsForm(){
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -18,7 +18,7 @@ export default function ContactUsForm(props){
         "text": `----- KLAUDSOL MESSAGE SUPPORT ----- \nDATE SENT: ${date_sent} \n\nSENDER DETAILS: \nName: ${name} \nEmail: ${email} \nSubject: ${subject} \n\nMessage: ${message}`,
        }
 
-       let result = await axios.post(`https://${process.env.NEXT_PUBLIC_WEBHOOK_HOST_NAME}/${process.env.NEXT_PUBLIC_WEBHOOK_PATH}/${process.env.NEXT_PUBLIC_WEBHOOK_LAST_QUERY_STRING}`, JSON.stringify(data), {
+       let result = await axios.post(`${process.env.NEXT_PUBLIC_WEBHOOK_URL}`, JSON.stringify(data), {
         withCredentials: false,
         transformRequest: [(data, headers) => {
           delete headers.post["Content-Type"]
@@ -36,7 +36,7 @@ export default function ContactUsForm(props){
         setMessage('');
 
       } else {
-        alert("There was an error.  Please try again later.")
+        alert("An error has occured. Please try again later.")
       }
   
     }

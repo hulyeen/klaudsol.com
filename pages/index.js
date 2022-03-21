@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         {/*<!-- Site title -->*/}
-        <title>Klaudsol - Cloud-based Business Apps</title>
+        <title>KlaudSol - Cloud-based Business Apps</title>
         <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
       </Head>
   {/* Navigation area starts */}
