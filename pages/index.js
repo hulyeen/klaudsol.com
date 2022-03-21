@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
+import ContactUsForm from './contact_us';
 
 export default function Home() {
   return (
     <>
       <Head>
         {/*<!-- Site title -->*/}
-        <title>KlaudSol - Cloud-based Business Apps</title>
+        <title>Klaudsol - Cloud-based Business Apps</title>
         <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
       </Head>
   {/* Navigation area starts */}
@@ -366,6 +367,7 @@ export default function Home() {
     </div>
   </section>
   {/* About us area ends */}
+  {/* Portfolio area starts */}
   <section id="work" className="work-area section-big">
     <div className="container-fluid">
       <div className="row">
@@ -471,6 +473,10 @@ export default function Home() {
       </div>
     </div>
   </section>
+   
+ {/* PORFOLIO  <Portfolio></Portfolio> */}   
+ {/* Portfolio area ends */}
+
   {/* Team  area starts 
     <section id="team" class="team-area section-big">
   <div class="container">
@@ -818,99 +824,16 @@ export default function Home() {
     </div>
   </section>
   {/* Subscribe area ends */}
+  
+  {/* Contact Us Form starts */}
   <div className="map-contact-area">
-    <div className="container">
-      <div id="contact" className="contact clearfix">
-        <div className="contact-title">
-          <h2>Contact Us</h2>
-          <p>
-            Questions? Suggestions? New ideas that can improve YOUR business?
-            Let us know how we can team up to solve problems.
-          </p>
-        </div>
-        <div className="contact-info">
-          <div className="contact-box">
-            <span className="ti-email" />
-            <h3>Email</h3>
-            <p>hello@klaudsol.com</p>
-          </div>
-          <div className="contact-box">
-            <span className="ti-comment" />
-            <h3>Phone</h3>
-            <p>+63 2 7618 5109</p>
-          </div>
-          <div className="contact-box" style={{ height: 185 }}>
-            <span className="ti-home" />
-            <h3>Address</h3>
-            <p style={{ marginTop: 15, fontSize: "80%" }}>
-              Level 10-01 One Global Place <br />
-              5th Avenue &amp; 25th Street <br />
-              Bonifacio Global City, Taguig, Metro Manila <br />
-              Philippines
-            </p>
-          </div>
-        </div>
-        <div className="contact-form">
-          <form id="ajax-contact" action="assets/mailer.php" method="post">
-            <div className="form-group col-md-6">
-              <label htmlFor="name">Your Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                className="form-control"
-                placeholder="Your name here"
-                required
-              />
-            </div>
-            <div className="form-group col-md-6">
-              <label htmlFor="email">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="form-control"
-                placeholder="Your email here"
-                required
-              />
-            </div>
-            <div className="form-group col-md-12">
-              <label htmlFor="subject">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                className="form-control"
-                placeholder="Your subject here"
-                required
-              />
-            </div>
-            <div className="form-group col-md-12">
-              <label htmlFor="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                className="form-control"
-                placeholder="Enter message"
-                required
-                defaultValue={""}
-              />
-              <div className="actions">
-                <input
-                  type="submit"
-                  defaultValue="Send Message"
-                  name="submit"
-                  id="submitButton"
-                  className="btn"
-                  title="Submit Your Message!"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+    <ContactUsForm></ContactUsForm>
+    
   </div>
+  {/* Contact Us Form ends */}
+
+  
+
   {/* Footer area starts */}
   <footer id="footer" className="footer-area section-big">
     <div className="container">
