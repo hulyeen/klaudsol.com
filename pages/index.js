@@ -1,151 +1,57 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
-
+import Link from 'next/link'
+import Navbar from '@/components/navbar';
+import Slider from '@/components/slider';
+import AboutUs from '@/components/about-us';
+import Footer from '@/components/footer';
+import Portfolio from '@/components/portfolio';
+import Content from './portfolio/[id]';
 export default function Home() {
   return (
     <>
       <Head>
-        {/*<!-- Site title -->*/}
-        <title>KlaudSol - Cloud-based Business Apps</title>
-        <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
+          {/*<!-- Site title -->*/}
+          <title>KlaudSol - Cloud-based Business Apps</title>
+          <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
       </Head>
-  {/* Navigation area starts */}
-  <div className="menu-area navbar-fixed-top">
-    <div className="container">
-      <div className="row">
-        {/* Navigation starts */}
-        <div className="col-md-12">
-          <div className="mainmenu">
-            <div className="navbar navbar-nobg">
-              <div className="navbar-header">
-                <a className="navbar-brand" href="">
-                  <img
-                    src="assets/img/logo-180x180.png"
-                    alt=''
-                    style={{ position: "relative", top: 5 }}
-                  />
-                </a>
-                <button
-                  type="button"
-                  className="navbar-toggle"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                >
-                  <span className="sr-only">Toggle navigation</span>
-                  <span className="icon-bar" />
-                  <span className="icon-bar" />
-                  <span className="icon-bar" />
-                </button>
-              </div>
-              <div className="navbar-collapse collapse">
-                <nav>
-                  <ul className="nav navbar-nav navbar-right">
-                    <li className="active">
-                      <a className="smooth_scroll" href="#slider">
-                        HOME
-                      </a>
-                    </li>
-                    <li>
-                      <a className="smooth_scroll" href="#whatwedo">
-                        WHAT WE DO
-                      </a>
-                    </li>
-                    <li>
-                      <a className="smooth_scroll" href="#aboutus">
-                        ABOUT US
-                      </a>
-                    </li>
-                    <li>
-                      <a className="smooth_scroll" href="#work">
-                        PORTFOLIO
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://blog.klaudsol.com/">READ OUR BLOG</a>
-                    </li>
-                    <li>
-                      <a className="smooth_scroll" href="#contact">
-                        CONTACT
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+
+      {/* Navigation area starts */}
+      <Navbar />
+      {/* Slider area starts */}
+      <Slider />
+ 
+     {/* Hero boxes starts */}
+    <section id="whatwedo" className="hero-box-area section-big">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <div className="section-title">
+              <h2>What We Do</h2>
+                <p>
+                We are a team of software developers who take pride and passion in
+                helping you build{" "}
+                <strong>Cloud-based and Serverless Business Web Applications</strong>.
+                </p>
+                <p>We specialize in the following technologies and platforms:</p>
             </div>
           </div>
         </div>
-        {/* Navigation ends */}
-      </div>
-    </div>
-  </div>
-  {/* Navigation area ends */}
-  {/* Slider area starts */}
-  <section id="slider" className="slider-area">
-    <div className="container">
-      <div
-        className="intro-text clearfix"
-        style={{
-          background: "rgba(255, 255, 255, 0.40)",
-          marginTop: 30,
-          padding: "5px 30px",
-          borderRadius: 10
-        }}
-      >
-        <h2>We build Cloud-based and Serverless Business Apps.</h2>
-        <p style={{ color: "#0f1d44" }}>
-          We build web apps that allow you to do more, and sell more.
-        </p>
-        <div className="clearfix video">
-          {/*
-              <a class="popup-youtube" href="http://www.youtube.com/watch?v=xtZE3sMv6lg">
-                  <span class="ti-control-play"></span>
-              </a>
-              <div class="text">
-                  <p>Watch</p>
-                  <h6>INTRO VIDEO</h6>
-              </div>
-              */}
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* Slider area ends */}
-  {/* Hero boxes starts */}
-  <section id="whatwedo" className="hero-box-area section-big">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12 text-center">
-          <div className="section-title">
-            <h2>What We Do</h2>
-            <p>
-              We are a team of software developers who take pride and passion in
-              helping you build{" "}
-              <strong>
-                Cloud-based and Serverless Business Web Applications
-              </strong>
-              .
-            </p>
-            <p>We specialize in the following technologies and platforms:</p>
-          </div>
-        </div>
-      </div>
       <div className="row">
         <div className="col-md-4 col-sm-6">
           <div className="hero-box">
             <span>
               <img
                 src="/assets/img/react-logo.svg"
-                className="klaudsol-tech-icons"
-              />
+                className="klaudsol-tech-icons"/>
             </span>
             <h3>
               <a
                 className="klaudsol-tech-link"
                 href="https://reactjs.org/"
                 target="_blank"
-                rel="noreferrer noopener"
-              >
+                rel="noreferrer noopener">
                 React
               </a>
             </h3>
@@ -315,24 +221,23 @@ export default function Home() {
     </div>
   </section>
   {/* Hero boxes ends */}
+
   {/* About us area starts */}
   <section id="aboutus" className="aboutus-area section-small">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-7 col-sm-6">
-          <div className="about-content">
-            <h5>ABOUT US</h5>
-            <h2>
-              We love helping merchants and entrepreneurs grow their businesses.
-            </h2>
-            <p>
-              You are embattled, overwhelmed, yet fully committed for your
-              business to survive and thrive. We feel you, and we are here to
-              give you that boost. Our business is built around the idea of
-              rooting for YOUR success, and building tools and systems that ease
-              everyday hurdles and challenges that come your way.
-            </p>
-          </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-7 col-sm-6">
+                        <div className="about-content">
+                            <h5>ABOUT US</h5>
+                            <h2>We love helping merchants and entrepreneurs grow their businesses.</h2>
+                            <p>
+                            You are embattled, overwhelmed, yet fully committed for your
+                            business to survive and thrive. We feel you, and we are here to
+                            give you that boost. Our business is built around the idea of
+                            rooting for YOUR success, and building tools and systems that ease
+                            everyday hurdles and challenges that come your way.
+                            </p>
+                        </div>
           {/*
               <div class="about-boxs">
 
@@ -356,121 +261,18 @@ export default function Home() {
 
               </div>
               */}
-        </div>
-        <div className="col-md-5 col-sm-6">
-          <div className="about-img">
-            <img src="assets/img/about/about.png" alt='' />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* About us area ends */}
-  <section id="work" className="work-area section-big">
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-4">
-          <div className="work-title">
-            <h2>Portfolio</h2>
-            <p>
-              See if our existing solutions fit your needs, or let us know if
-              you want any customizations.
-            </p>
-            {/*
-                  <p>Click here to <a class='hover-black'href="#">view all of our recent work.</a></p>
-                  */}
-          </div>
-        </div>
-        <div className="col-md-8">
-          <ul className="work filters">
-            <li className="filter" data-filter="all">
-              All Items
-            </li>
-            <li className="filter" data-filter=".biz">
-              Serverless Web Apps
-            </li>
-            <li className="filter" data-filter=".shopify">
-              Shopify Apps
-            </li>
-          </ul>
-          <div className="portfolio">
-            <div className="row work-items">
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate shopify">
-                <div className="item">
-                  <a
-                    href="https://apps.shopify.com/goodreadr-book-reviews-1"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      src="assets/img/work/p1.png"
-                      alt="GoodReadR is an app for online bookstore owners. It adds a Goodreads review widget on your Shopify store"
-                    />
-                    <div className="overlay">
-                      <div className="overlay-text">
-                        <h3>GoodReadR</h3>
-                        <p>
-                          Created for online bookstore owners, GoodreadR is a
-                          Shopify app that adds a Goodreads book review widget
-                          on your Shopify store.
-                        </p>
-                      </div>
                     </div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix dev biz">
-                <div className="item">
-                  <a
-                    href="https://sme.klaudsol.app/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      src="assets/img/work/p2.png"
-                      alt="SME is an accounting, inventory, procurement, and payroll system specifically tailored for Philippine small and medium-scale businesses."
-                    />
-                    <div className="overlay">
-                      <div className="overlay-text">
-                        <h3>SME</h3>
-                        <p>
-                          SME is an accounting, inventory, procurement, and
-                          payroll system specifically tailored for Philippine
-                          small and medium-scale businesses.
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate typography web biz">
-                <div className="item">
-                  <a
-                    href="https://doorbell.klaudsol.com"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img src="assets/img/work/p3.png" alt='' />
-                    <div className="overlay">
-                      <div className="overlay-text">
-                        <h3>Doorbell</h3>
-                        <p>
-                          Doorbell is an app built for real estate agents and
-                          investors. Doorbell allows you to be notified via SMS
-                          or email if there is a foreclosed property in the
-                          market that suits your needs.
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+                        <div className="col-md-5 col-sm-6">
+                            <div className="about-img">
+                                <img src="../assets/img/about/about.png" alt='' />
+                            </div>
+                        </div>
+                 </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
+ 
+  {/*Portfolio starts*/}
+  <Portfolio />
   {/* Team  area starts 
     <section id="team" class="team-area section-big">
   <div class="container">
@@ -912,37 +714,7 @@ export default function Home() {
     </div>
   </div>
   {/* Footer area starts */}
-  <footer id="footer" className="footer-area section-big">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12 text-center">
-          <div className="footer-title">
-            <h2>KlaudSol</h2>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12 text-center">
-          <div className="footer-social">
-            <a href="https://www.facebook.com/klaudsol/" target="_blank">
-              <span className="ti-facebook" />
-            </a>
-            <a href="https://www.linkedin.com/company/14594185" target="_blank">
-              <span className="ti-linkedin" />
-            </a>
-          </div>
-          <p>
-            Copyright © 2019 - 2022. All rights reserved to{" "}
-            <a href="https://klaudsol.com">KlaudSol Philippines, Inc.</a>
-            <br />
-            Level 10-01 One Global Place, 5th Avenue &amp; 25th Street,
-            Bonifacio Global City, Taguig, Metro Manila, Philippines
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  {/* Footer area ends */}
+  <Footer />
   {/* Latest jQuery */}
   <Script src="assets/js/jquery.min.js" strategy="beforeInteractive"></Script>
   {/* Plugin js */}
@@ -952,7 +724,8 @@ export default function Home() {
   <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvoZGVhG5uh6ZkXGFPrYLrJ939mfbX2Q"></Script>
   {/* Main js*/}
   <Script src="assets/js/main_script.js" strategy="lazyOnload"></Script>
-
+  
     </>
+    
   )
 }
