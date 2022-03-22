@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 export default function Navbar(){
     return(
         <>
@@ -35,11 +35,13 @@ export default function Navbar(){
                 <ul className="nav navbar-nav navbar-right">
 
                   <li className="active">
-                    <a className="smooth_scroll" href="/pages/index.js">
+                  <Link href="/">
+                    <a className="smooth_scroll" >
                       HOME
                     </a>
+                  </Link>
                   </li>
-
+            
                   <li>
                     <a className="smooth_scroll" href="#whatwedo">
                       WHAT WE DO

@@ -37,7 +37,7 @@ const Portfolio = () =>{
                     <div className="item">
                     <Link href="/portfolio/goodreadr">
                       <a
-                        target="_blank"
+                
                         data-title="GoodReadR"
                       >
                         <img
@@ -63,7 +63,7 @@ const Portfolio = () =>{
                     <div className="item">
                     <Link href="/portfolio/sme">
                       <a
-                        target="_blank" 
+                         
                       >
                         <img
                           src="assets/img/work/p2.png"
@@ -87,7 +87,7 @@ const Portfolio = () =>{
                     <div className="item">
                     <Link href="/portfolio/doorbell">
                       <a
-                        target="_blank"
+                        
                       >
                         <img src="assets/img/work/p3.png" alt='' />
                         <div className="overlay">
@@ -110,7 +110,7 @@ const Portfolio = () =>{
                     <div className="item">
                     <Link href="/portfolio/sarisuki">
                       <a
-                        target="_blank"
+                       
                       >
                         <img src="assets/img/work/p4.png" alt='' />
                         <div className="overlay">

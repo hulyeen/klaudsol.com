@@ -43,38 +43,30 @@ export default function Content() {
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     
-    <div className='container'>
-    <a className="home-btn" onClick={() => router.push('/')}>
-                    <img
-                        src="../assets/img/logo-180x180.png"
-                        alt=''
-                        style={{ position: "relative", top: 5 }}/>
-    </a>
-    </div>
+    <Navbar />
 
             {/*Banner Content Start*/}
             <section className='portfolio-section'>
             
                 <div key ={p_content._id}className='container'>
-                    <div className="banner-container">
+                    <div className="banner-container col-md-4 col-sm-6">
                         <h2>{p_content.slogan}</h2>
                         <p>{p_content.desc1}</p>
                         <button className="visit-site-btn">Visit Site</button>
                     </div>
+                    <div className='col-md-7 col-sm-6'>
                     <img src={p_content.image1} className = "banner-img"alt=''/>
+                    </div>
                 </div>
             </section>
             {/*Banner Content End*/}
           {/*About Section*/}
-          <div className=" container about-container">
-                <img src = {p_content.image2}></img>
+          <div className="container about-container">
                 <div className="about-text">
                     <p className="p1">WHAT WE DO</p>
                     <p className="p2">{p_content.desc2}</p>                       
                 </div>
             </div>
-           
-            <AboutUs></AboutUs>
             <Footer></Footer>
 
     </>

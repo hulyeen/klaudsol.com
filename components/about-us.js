@@ -42,7 +42,7 @@ export default function AboutUs(){
               </div>
               */}
                     </div>
-                        <div className="col-md-5 col-sm-6">
+                        <div className="col-md-5 col-sm-3">
                             <div className="about-img">
                                 <img src={p_content.image3} alt='' />
                             </div>
