@@ -57,7 +57,7 @@ export default function Content() {
                     <div className='col-md-7 col-sm-6'>
                     <img src={p_content.image1} className = "banner-img"alt=''/>
                     </div>
-                </div>
+                </div>git
             </section>
             {/*Banner Content End*/}
           {/*About Section*/}
