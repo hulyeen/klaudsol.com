@@ -24,7 +24,7 @@ export default function ContactUsForm(){
 
       // message that will be sent to slack
        const data = {
-        "text": `TESTING MODAL ----- KLAUDSOL MESSAGE SUPPORT ----- \nDATE SENT: ${date_sent} \n\nSENDER DETAILS: \nName: ${name} \nEmail: ${email} \nSubject: ${subject} \n\nMessage: ${message}`,
+        "text": `----- KLAUDSOL MESSAGE SUPPORT ----- \nDATE SENT: ${date_sent} \n\nSENDER DETAILS: \nName: ${name} \nEmail: ${email} \nSubject: ${subject} \n\nMessage: ${message}`,
        }
 
        // function to send message to slack
