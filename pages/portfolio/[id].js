@@ -49,23 +49,30 @@ export default function Content() {
             <section className='portfolio-section'>
             
                 <div key ={p_content._id}className='container'>
-                    <div className="banner-container col-md-4 col-sm-6">
-                        <h2>{p_content.slogan}</h2>
+                    <div className="banner-container col-lg-4 col-md-4 col-sm-3">
+                        <h2>{p_content.name}</h2>
                         <p>{p_content.desc1}</p>
-                        <button className="visit-site-btn">Visit Site</button>
+                        <a 
+                        href={p_content.site}
+                        target ="_blank"
+                        rel="noreferrer noopener">
+                        <button className='visit-site-btn '>Visit Site</button>
+                        </a>
                     </div>
-                    <div className='col-md-7 col-sm-6'>
+                    
                     <img src={p_content.image1} className = "banner-img"alt=''/>
-                    </div>
-                </div>git
+                    
+                    
+                </div>
             </section>
             {/*Banner Content End*/}
           {/*About Section*/}
+           
           <div className="container about-container">
-                <div className="about-text">
+                {/*<div className="about-text">
                     <p className="p1">WHAT WE DO</p>
                     <p className="p2">{p_content.desc2}</p>                       
-                </div>
+                </div>*/}
             </div>
             <Footer></Footer>
 

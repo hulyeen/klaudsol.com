@@ -539,13 +539,14 @@ fieldset {
         margin-bottom: 30px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     
     .banner-img{
         display: none;
     }
    
 }
+
 /* ----------------------------------------------------------------------------------------
 *                                   06. working process area css
 * --------------------------------------------------------------------------------------- */
@@ -1442,14 +1443,16 @@ fieldset {
     border: 1px solid transparent;
     transition: all 0.3s ease;
     /*background: rgb(255, 101, 165);*/
-    background: rgb(185, 184, 114)
+    background: rgb(185, 184, 114);
+    cursor: pointer;
 }
 
 #submitButton:hover, .visit-site-btn:hover {
     background: #fff;
     border: 1px solid #eee;
     /*color: rgb(255, 101, 165);*/
-    color: rgb(185, 184, 114)
+    color: rgb(185, 184, 114);
+    
 }
 
 .success {
@@ -1661,10 +1664,11 @@ a.klaudsol-tech-link:hover {
     height: 400px;
     width: 280px;
     float:right;
-    margin-left: -500px;
+    margin-left: 400px;
     transform: translate(70%);
     margin-top: 180px;
 }
+
 
 .about-container{
     width:83%;
@@ -1672,8 +1676,7 @@ a.klaudsol-tech-link:hover {
     background-color: #fff;
     border-radius: 20px;
     box-shadow:2px 2px 12px rgba(0,0,0,0.2);
-    display: flex;
-    margin: -7% auto 20px auto;
+    margin: 70px auto 20px auto;
     position: relative;
     justify-content: space-evenly;
     align-items: center;
