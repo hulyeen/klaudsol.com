@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Script from 'next/script';
-import ContactUsForm from './contact_us';
+import ContactUsForm from '../components/contact_us';
 
 export default function Home() {
   return (
@@ -118,6 +117,7 @@ export default function Home() {
       <div className="row">
         <div className="col-md-12 text-center">
           <div className="section-title">
+           
             <h2>What We Do</h2>
             <p>
               We are a team of software developers who take pride and passion in
