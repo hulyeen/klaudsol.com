@@ -1036,7 +1036,7 @@ fieldset {
   background-size: cover;
   background-position: center center;
   position: relative;
-
+}
 /*.testimonial-area {
     background: url(../img/bg/testimonial-bg.png);
     background-repeat: no-repeat;
@@ -1174,10 +1174,9 @@ fieldset {
 /* ----------------------------------------------------------------------------------------
 *                                  11. Price area css
 * --------------------------------------------------------------------------------------- */
-.price-area {
-}
 
-.tab-content {
+
+.tab-content{
   margin-top: 25px;
 }
 
@@ -1618,7 +1617,8 @@ fieldset {
   border: 1px solid #eee;
   /*color: rgb(255, 101, 165);*/
   color: rgb(185, 184, 114);
-#submitButton, .visit-site-btn {
+}
+#submitButton{
     background: #ff65a5;
     border: 0;
     color: #fff;
@@ -1632,7 +1632,7 @@ fieldset {
     cursor: pointer;
 }
 
-#submitButton:hover, .visit-site-btn:hover {
+#submitButton:hover {
     background: #fff;
     border: 1px solid #eee;
     /*color: rgb(255, 101, 165);*/
@@ -1837,30 +1837,76 @@ a.klaudsol-tech-link:hover {
     flex-direction : row;
 }
 
-.banner-container{
-    position:absolute;
-    left: 20%;
-    top: 50%;
-    transform:translate(-13%, -42%);
-}
-.banner-container .banner-brand{
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    color: #0f1d44;
-    padding:5px 30px;
-    border-radius: 10;
+/*Banner Are*/
+Angeli Sta Ana Taso
+.container_main {
+  height: 90vh;
+  width: 100%;
+  background-color: white;
+  padding-top: 50px;
 }
 
-.banner-img{
-    height: 400px;
-    width: 280px;
-    float:right;
-    margin-left: 400px;
-    transform: translate(70%);
-    margin-top: 180px;
+.text_container {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 }
 
+.txt_mainTitle {
+  color: #000;
+  font-weight: bold;
+  font-size: 50px;
+}
 
+.txt_description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 20px;
+}
+
+.img_container {
+  padding-left: 30px;
+}
+
+.container_technology {
+  height: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.a_visitSite {
+  color: white;
+}
+
+.a_visitSite:hover {
+  color: #000;
+  color: rgb(185, 184, 114);
+  background-color: transparent;
+}
+
+.btn_visitSite {
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 50px;
+  margin-top: 30px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  /*background: rgb(255, 101, 165);*/
+  background: rgb(185, 184, 114);
+}
+
+.btn_visitSite:hover {
+  color: rgb(185, 184, 114);
+  background: #fff;
+  border: 2px solid #eee;
+  color: rgb(185, 184, 114);
+}
 .about-container{
     width:83%;
     height:200px;

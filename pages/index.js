@@ -1,51 +1,19 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Script from 'next/script';
-
-import ContactUsForm from '../components/contact_us';
-
-
-import Link from 'next/link'
 import Navbar from '@/components/navbar';
-import Slider from '@/components/slider';
-import AboutUs from '@/components/about-us';
-import Footer from '@/components/footer';
 import Portfolio from '@/components/portfolio';
-import Content from './portfolio/[id]';
-
+import Footer from '@/components/footer';
 export default function Home() {
   return (
     <>
       <Head>
-          {/*<!-- Site title -->*/}
-          <title>KlaudSol - Cloud-based Business Apps</title>
-          <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
+        {/*<!-- Site title -->*/}
+        <title>KlaudSol - Cloud-based Business Apps</title>
+        <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
       </Head>
-
-      {/* Navigation area starts */}
-      <Navbar />
-      {/* Slider area starts */}
-      <Slider />
- 
-     {/* Hero boxes starts */}
-    <section id="whatwedo" className="hero-box-area section-big">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <div className="section-title">
-              <h2>What We Do</h2>
-                <p>
-                We are a team of software developers who take pride and passion in
-                helping you build{" "}
-                <strong>Cloud-based and Serverless Business Web Applications</strong>.
-                </p>
-                <p>We specialize in the following technologies and platforms:</p>
-            </div>
-          </div>
-        </div
-        {/* Navigation ends */}
-      </div>
-    </div>
-  </div>
+  {/* Navigation area starts */}
+  <Navbar/>
   {/* Navigation area ends */}
   {/* Slider area starts */}
   <section id="slider" className="slider-area">
@@ -84,7 +52,6 @@ export default function Home() {
       <div className="row">
         <div className="col-md-12 text-center">
           <div className="section-title">
-           
             <h2>What We Do</h2>
             <p>
               We are a team of software developers who take pride and passion in
@@ -97,21 +64,23 @@ export default function Home() {
             <p>We specialize in the following technologies and platforms:</p>
           </div>
         </div>
-      </div
+      </div>
       <div className="row">
         <div className="col-md-4 col-sm-6">
           <div className="hero-box">
             <span>
               <img
                 src="/assets/img/react-logo.svg"
-                className="klaudsol-tech-icons"/>
+                className="klaudsol-tech-icons"
+              />
             </span>
             <h3>
               <a
                 className="klaudsol-tech-link"
                 href="https://reactjs.org/"
                 target="_blank"
-                rel="noreferrer noopener">
+                rel="noreferrer noopener"
+              >
                 React
               </a>
             </h3>
@@ -281,23 +250,24 @@ export default function Home() {
     </div>
   </section>
   {/* Hero boxes ends */}
-
   {/* About us area starts */}
   <section id="aboutus" className="aboutus-area section-small">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-7 col-sm-6">
-                        <div className="about-content">
-                            <h5>ABOUT US</h5>
-                            <h2>We love helping merchants and entrepreneurs grow their businesses.</h2>
-                            <p>
-                            You are embattled, overwhelmed, yet fully committed for your
-                            business to survive and thrive. We feel you, and we are here to
-                            give you that boost. Our business is built around the idea of
-                            rooting for YOUR success, and building tools and systems that ease
-                            everyday hurdles and challenges that come your way.
-                            </p>
-                        </div>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-7 col-sm-6">
+          <div className="about-content">
+            <h5>ABOUT US</h5>
+            <h2>
+              We love helping merchants and entrepreneurs grow their businesses.
+            </h2>
+            <p>
+              You are embattled, overwhelmed, yet fully committed for your
+              business to survive and thrive. We feel you, and we are here to
+              give you that boost. Our business is built around the idea of
+              rooting for YOUR success, and building tools and systems that ease
+              everyday hurdles and challenges that come your way.
+            </p>
+          </div>
           {/*
               <div class="about-boxs">
 
@@ -331,80 +301,7 @@ export default function Home() {
     </div>
   </section>
   {/* About us area ends */}
-  {/* Portfolio area starts */}
-  <section id="work" className="work-area section-big">
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-4">
-          <div className="work-title">
-            <h2>Portfolio</h2>
-            <p>
-              See if our existing solutions fit your needs, or let us know if
-              you want any customizations.
-            </p>
-            {/*
-                  <p>Click here to <a class='hover-black'href="#">view all of our recent work.</a></p>
-                  */}
-          </div>
-        </div>
-        <div className="col-md-8">
-          <ul className="work filters">
-            <li className="filter" data-filter="all">
-              All Items
-            </li>
-            <li className="filter" data-filter=".biz">
-              Serverless Web Apps
-            </li>
-            <li className="filter" data-filter=".shopify">
-              Shopify Apps
-            </li>
-          </ul>
-          <div className="portfolio">
-            <div className="row work-items">
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate shopify">
-                <div className="item">
-                  <a
-                    href="https://apps.shopify.com/goodreadr-book-reviews-1"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      src="assets/img/work/p1.png"
-                      alt="GoodReadR is an app for online bookstore owners. It adds a Goodreads review widget on your Shopify store"
-                    />
-                    <div className="overlay">
-                      <div className="overlay-text">
-                        <h3>GoodReadR</h3>
-                        <p>
-                          Created for online bookstore owners, GoodreadR is a
-                          Shopify app that adds a Goodreads book review widget
-                          on your Shopify store.
-                        </p>
-                      </div>
-                    </div>
-                        <div className="col-md-5 col-sm-6">
-                            <div className="about-img">
-                                <img src="../assets/img/about/about.png" alt='' />
-                            </div>
-                        </div>
-                 </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-   
- {/* PORFOLIO  <Portfolio></Portfolio> */}   
- {/* Portfolio area ends */}
-
-
-        </section>
- 
-  {/*Portfolio starts*/}
-  <Portfolio />
-
+  <Portfolio/>
   {/* Team  area starts 
     <section id="team" class="team-area section-big">
   <div class="container">
@@ -752,18 +649,102 @@ export default function Home() {
     </div>
   </section>
   {/* Subscribe area ends */}
-  
-  {/* Contact Us Form starts */}
   <div className="map-contact-area">
-    <ContactUsForm></ContactUsForm>
-    
+    <div className="container">
+      <div id="contact" className="contact clearfix">
+        <div className="contact-title">
+          <h2>Contact Us</h2>
+          <p>
+            Questions? Suggestions? New ideas that can improve YOUR business?
+            Let us know how we can team up to solve problems.
+          </p>
+        </div>
+        <div className="contact-info">
+          <div className="contact-box">
+            <span className="ti-email" />
+            <h3>Email</h3>
+            <p>hello@klaudsol.com</p>
+          </div>
+          <div className="contact-box">
+            <span className="ti-comment" />
+            <h3>Phone</h3>
+            <p>+63 2 7618 5109</p>
+          </div>
+          <div className="contact-box" style={{ height: 185 }}>
+            <span className="ti-home" />
+            <h3>Address</h3>
+            <p style={{ marginTop: 15, fontSize: "80%" }}>
+              Level 10-01 One Global Place <br />
+              5th Avenue &amp; 25th Street <br />
+              Bonifacio Global City, Taguig, Metro Manila <br />
+              Philippines
+            </p>
+          </div>
+        </div>
+        <div className="contact-form">
+          <form id="ajax-contact" action="assets/mailer.php" method="post">
+            <div className="form-group col-md-6">
+              <label htmlFor="name">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className="form-control"
+                placeholder="Your name here"
+                required
+              />
+            </div>
+            <div className="form-group col-md-6">
+              <label htmlFor="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className="form-control"
+                placeholder="Your email here"
+                required
+              />
+            </div>
+            <div className="form-group col-md-12">
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                className="form-control"
+                placeholder="Your subject here"
+                required
+              />
+            </div>
+            <div className="form-group col-md-12">
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                className="form-control"
+                placeholder="Enter message"
+                required
+                defaultValue={""}
+              />
+              <div className="actions">
+                <input
+                  type="submit"
+                  defaultValue="Send Message"
+                  name="submit"
+                  id="submitButton"
+                  className="btn"
+                  title="Submit Your Message!"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  {/* Contact Us Form ends */}
-
-  
-
   {/* Footer area starts */}
-  <Footer />
+  <Footer/>
+  {/* Footer area ends */}
   {/* Latest jQuery */}
   <Script src="assets/js/jquery.min.js" strategy="beforeInteractive"></Script>
   {/* Plugin js */}
@@ -773,8 +754,7 @@ export default function Home() {
   <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvoZGVhG5uh6ZkXGFPrYLrJ939mfbX2Q"></Script>
   {/* Main js*/}
   <Script src="assets/js/main_script.js" strategy="lazyOnload"></Script>
-  
+
     </>
-    
   )
 }
