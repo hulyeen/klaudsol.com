@@ -51,13 +51,13 @@ export default function Content() {
                         <div className='text_container text-center col-xl-12'> 
                             <h1 className='txt_mainTitle'> {p_content.name} </h1>
                             <p className='txt_description'> {p_content.desc1} </p>
-                            <a className='btn_visitSite' href='https://apps.shopify.com/goodreadr-book-reviews-1'>Visit Site</a>  
+                            <a className='btn_visitSite' href={p_content.site} target="_blank" rel = "noreferrer">Visit Site</a>  
                         </div>
                     </div>
 
                     <div className='col-xl-3 col-lg-3 col-md-12 col-sm-12 '>
                         <div className='text_container text-center'> 
-                            <img src='../assets/img/work/p1.png'></img>
+                            <img src={p_content.image1}></img>
                         </div>
                     </div>
                 </div>
