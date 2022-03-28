@@ -13,10 +13,10 @@ export default function Footer(){
                 <div className="row">
                     <div className="col-md-12 text-center">
                         <div className="footer-social">
-                            <a href="https://www.facebook.com/klaudsol/" target="_blank">
-                            <span className="ti-facebook" /></a>
-                            <a href="https://www.linkedin.com/company/14594185" target="_blank">
-                            <span className="ti-linkedin" /></a>
+                            <a href="https://www.facebook.com/klaudsol/" target="_blank"/>
+                            <span className="ti-facebook"/>
+                            <a href="https://www.linkedin.com/company/14594185" target="_blank"/>
+                            <span className="ti-linkedin" />
                         </div>
                         <p>
                         Copyright © 2019 - 2022. All rights reserved to{" "}

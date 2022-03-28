@@ -1,5 +1,4 @@
 import Link from "next/dist/client/link"
-
 const Portfolio = () =>{
     return(
         <>
