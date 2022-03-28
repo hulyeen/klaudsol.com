@@ -91,10 +91,12 @@
        }
    });
 
+/*
    $('body').scrollspy({
        target: '.navbar-collapse',
        offset: 195
    });
+*/
 
 
 
@@ -295,5 +297,6 @@
 
 
   }); // $(document).ready end
+  
 
 })(jQuery);

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Script from 'next/script';
 import Navbar from '@/components/navbar';
 import Portfolio from '@/components/portfolio';
 import Footer from '@/components/footer';
@@ -745,15 +744,7 @@ export default function Home() {
   {/* Footer area starts */}
   <Footer/>
   {/* Footer area ends */}
-  {/* Latest jQuery */}
-  <Script src="assets/js/jquery.min.js" strategy="beforeInteractive"></Script>
-  {/* Plugin js */}
-  <Script src="assets/js/plugin.js"></Script>
-  <Script src="assets/js/jquery.mixitup.js"></Script>
-  {/* GOOGLE MAP JS */}
-  <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvoZGVhG5uh6ZkXGFPrYLrJ939mfbX2Q"></Script>
-  {/* Main js*/}
-  <Script src="assets/js/main_script.js" strategy="lazyOnload"></Script>
+
 
     </>
   )
