@@ -7,13 +7,9 @@ import Script from 'next/script';
 
 
 export default function Content() {
-   
-
   const router = useRouter();
-
   const p_content = portfolio_content[router.query.id];
   if (!p_content) return <p></p>;
-
   return (
     <>
             <Navbar/>
