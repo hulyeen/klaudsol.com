@@ -36,14 +36,10 @@ const Portfolio = () =>{
                   <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate shopify">
                     <div className="item">
                     <Link href="/portfolio/goodreadr">
-                      <a
-                
-                        data-title="GoodReadR"
-                      >
+                      <a data-title="GoodReadR">
                         <img
                           src="assets/img/work/p1.png"
-                          alt="GoodReadR is an app for online bookstore owners. It adds a Goodreads review widget on your Shopify store"
-                        />
+                          alt="GoodReadR is an app for online bookstore owners. It adds a Goodreads review widget on your Shopify store"/>
                         <div className="overlay">
                           <div className="overlay-text">
                             <h3>GoodReadR</h3>
@@ -58,13 +54,10 @@ const Portfolio = () =>{
                       </Link>
                     </div>
                   </div>
-                  
                   <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix dev biz">
                     <div className="item">
                     <Link href="/portfolio/sme">
-                      <a
-                         
-                      >
+                      <a data-title="SME">
                         <img
                           src="assets/img/work/p2.png"
                           alt="SME is an accounting, inventory, procurement, and payroll system specifically tailored for Philippine small and medium-scale businesses."
@@ -86,9 +79,7 @@ const Portfolio = () =>{
                   <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate typography web biz">
                     <div className="item">
                     <Link href="/portfolio/doorbell">
-                      <a
-                        
-                      >
+                      <a data-title="Doorbell">
                         <img src="assets/img/work/p3.png" alt='' />
                         <div className="overlay">
                           <div className="overlay-text">
@@ -109,9 +100,7 @@ const Portfolio = () =>{
                   <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate typography web biz">
                     <div className="item">
                     <Link href="/portfolio/sarisuki">
-                      <a
-                       
-                      >
+                      <a data-title="Sarisuki">
                         <img src="assets/img/work/p4.png" alt='' />
                         <div className="overlay">
                           <div className="overlay-text">
@@ -132,7 +121,6 @@ const Portfolio = () =>{
           </div>
         </div>
       </section>
-  
         </>
     )
 }
