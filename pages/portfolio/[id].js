@@ -20,7 +20,7 @@ export default function Content() {
   if (!p_content) return <p></p>;
   return (
     <>
-            <Navbar/>
+            <Navbar navset="portfolio"/>
             <div>
             <div className='container container_main'>
                 <div className='row'>

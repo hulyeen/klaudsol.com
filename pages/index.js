@@ -7,11 +7,14 @@ import Footer from '@/components/footer';
 import runLegacyScripts from '@/components/legacy';
 import { useEffect }  from 'react';
 import $ from "jquery";
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  
   useEffect(() => {
     runLegacyScripts($);
   }, []);
+  
   
   return (
     <>
