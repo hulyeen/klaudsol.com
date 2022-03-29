@@ -44,7 +44,7 @@
 
 
 
-(function($) {
+export default function runLegacyScripts($) {
 'use strict';
 
 
@@ -116,6 +116,7 @@
 /*-------------------------------------------------------------------------*
 *                  06. Magnific Popup js                                  *
 *-------------------------------------------------------------------------*/
+    /*
    $('.work-popup').magnificPopup({
      type: 'image',
      gallery: {
@@ -130,18 +131,20 @@
        preloader: false,
        fixedContentPos: false
    });
+   */
 
 
 /*-------------------------------------------------------------------------*
 *                  07. Portfolio js                                       *
 *-------------------------------------------------------------------------*/
-   $('.portfolio').mixItUp();
+   //$('.portfolio').mixItUp();
 
 
 
 /*-------------------------------------------------------------------------*
 *                  08. Testimonial js                                     *
 *-------------------------------------------------------------------------*/
+/*
    $(".testimonial-list").owlCarousel({
       slideSpeed      : 1000,
       paginationSpeed : 500,
@@ -151,11 +154,13 @@
       navigation      : false,
       autoPlay        : true,
    });
+ */
 
         
  /*-------------------------------------------------------------------------*
 *                       09. client js                                     *
 *-------------------------------------------------------------------------*/
+    /*
    $(".owl-client").owlCarousel({
        items               : 5,
        autoPlay            : true,
@@ -167,10 +172,12 @@
        navigation          : false,
        autoHeight          : true,
    });
+   */
 /*-------------------------------------------------------------------------*
 *                       10. News js                                     *
  *-------------------------------------------------------------------------*/      
 
+/*
  $(".news-list").owlCarousel({
     items               : 3,
     autoPlay            : true,
@@ -184,6 +191,7 @@
     autoHeight          : true,
     navigationText      : ['<span class="ti-layout-line-solid"></span>', '<span class="ti-layout-line-solid"></span>'],
 });
+*/
 
      
 
@@ -192,6 +200,7 @@
 *                       11. Google Map js                                 *
 *-------------------------------------------------------------------------*/
 
+/*
       var myCenter = new google.maps.LatLng(14.549341, 121.046583);
       function initialize(){
       var mapProp = {
@@ -204,6 +213,7 @@
           var marker = new google.maps.Marker({position: myCenter, map: map});
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+*/
 
 
 
@@ -211,6 +221,7 @@
 /*-------------------------------------------------------------------------*
 *                  12. Ajax Contact Form js                               *
 *-------------------------------------------------------------------------*/
+/*
       // Get the form.
       var form = $('#ajax-contact');
 
@@ -261,11 +272,13 @@
 
       });
 
-
+*/
 
 /*-------------------------------------------------------------------------*
 *                   13. MailChimp js                                    *
 *-------------------------------------------------------------------------*/
+
+/*
           $('#mc-form').ajaxChimp({
             language: 'en',
             callback: mailChimpResponse,
@@ -295,8 +308,7 @@
 
 
 
+ */
 
   }); // $(document).ready end
-  
-
-})(jQuery);
+};

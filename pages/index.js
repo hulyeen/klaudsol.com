@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Navbar from '@/components/navbar';
 import Portfolio from '@/components/portfolio';
 import Footer from '@/components/footer';
