@@ -4,7 +4,15 @@ import Link from 'next/link';
 import Navbar from '@/components/navbar';
 import Portfolio from '@/components/portfolio';
 import Footer from '@/components/footer';
+import runLegacyScripts from '@/components/legacy';
+import { useEffect }  from 'react';
+import $ from "jquery";
+
 export default function Home() {
+  useEffect(() => {
+    runLegacyScripts($);
+  }, []);
+  
   return (
     <>
       <Head>
