@@ -1,5 +1,15 @@
-import Link from "next/dist/client/link"
+import Link from "next/link";
+import { useEffect } from 'react';
+import $ from "jquery";
+import mixItUp from '@/components/jquery.mixitup';
+
 const Portfolio = () =>{
+  
+    useEffect(() => {
+      mixItUp($);
+      $('.portfolio').mixItUp();
+    }, []);
+  
     return(
         <>
         <section id="work" className="work-area section-big">

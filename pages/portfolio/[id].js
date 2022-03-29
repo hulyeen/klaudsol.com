@@ -38,16 +38,7 @@ export default function Content() {
             </div>
             <Footer/>
             </div>
-            {/* Latest jQuery */}
-            {/* Latest jQuery */}
-    <Script src="assets/js/jquery.min.js" strategy="beforeInteractive"></Script>
-  {/* Plugin js */}
-  <Script src="assets/js/plugin.js"></Script>
-  <Script src="assets/js/jquery.mixitup.js"></Script>
-  {/* GOOGLE MAP JS */}
-  <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvoZGVhG5uh6ZkXGFPrYLrJ939mfbX2Q"></Script>
-  {/* Main js*/}
-  <Script src="assets/js/main_script.js" strategy="lazyOnload"></Script>
+     
     </>
   );
 };

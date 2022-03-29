@@ -12,7 +12,7 @@
  *            http://creativecommons.org/licenses/by-nc/3.0/
  */
 
-(function($, undf){
+export default function($, undf) {
 	'use strict';
 
 	/**
@@ -2095,4 +2095,4 @@
 		});
 	};
 
-})(jQuery);
+};
