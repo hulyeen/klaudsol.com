@@ -4,15 +4,23 @@ import Navbar from '@/components/navbar';
 import { useRouter } from "next/router";
 import portfolio_content from "@/components/portfolio_content.json"
 import Script from 'next/script';
+import runLegacyScripts from '@/components/legacy';
+import { useEffect }  from 'react';
+import $ from "jquery";
 
 
 export default function Content() {
+    
+  useEffect(() => {
+    runLegacyScripts($);
+  }, []);
+  
   const router = useRouter();
   const p_content = portfolio_content[router.query.id];
   if (!p_content) return <p></p>;
   return (
     <>
-            <Navbar/>
+            <Navbar navset="portfolio"/>
             <div>
             <div className='container container_main'>
                 <div className='row'>

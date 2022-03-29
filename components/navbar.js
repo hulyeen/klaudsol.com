@@ -1,5 +1,8 @@
 import Link from "next/link";
-export default function Navbar(){
+import NavBarDefault from '@/components/NavBarDefault';
+import NavBarPortfolio from '@/components/NavBarPortfolio';
+
+export default function Navbar({navset = 'default'}){
     return(
         <>
         
@@ -11,12 +14,14 @@ export default function Navbar(){
         <div className="mainmenu">
         <div className="navbar navbar-nobg">
             <div className="navbar-header">
-                <a className="navbar-brand" href="">
-                    <img
-                        src="../assets/img/logo-180x180.png"
-                        alt=''
-                        style={{ position: "relative", top: 5 }}/>
-                </a>
+                <Link href="/">
+                  <a className="navbar-brand">
+                      <img
+                          src="/assets/img/logo-180x180.png"
+                          alt=''
+                          style={{ position: "relative", top: 5 }}/>
+                  </a>
+                </Link>
                 <button
                     type="button"
                     className="navbar-toggle"
@@ -32,45 +37,16 @@ export default function Navbar(){
 
             <div className="navbar-collapse collapse">
               <nav>
-                <ul className="nav navbar-nav navbar-right">
+                
+                {navset === 'default' && (
+                  <NavBarDefault /> 
+                )}
+                
+                {navset === 'portfolio' && (
+                  <NavBarPortfolio />
+                )}
+                
 
-                  <li className="active">
-                  <Link href="/">
-                    <a className="smooth_scroll" >
-                      HOME
-                    </a>
-                  </Link>
-                  </li>
-            
-                  <li>
-                    <a className="smooth_scroll" href="#whatwedo">
-                      WHAT WE DO
-                    </a>
-                  </li>
-
-                  <li>
-                    <a className="smooth_scroll" href="#aboutus">
-                      ABOUT US
-                    </a>
-                  </li>
-
-                  <li>
-                    <a className="smooth_scroll" href="#work">
-                      PORTFOLIO
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://blog.klaudsol.com/">READ OUR BLOG</a>
-                  </li>
-
-                  <li>
-                    <a className="smooth_scroll" href="#contact">
-                      CONTACT
-                    </a>
-                  </li>
-
-                </ul>
               </nav>
             </div>
           </div>
