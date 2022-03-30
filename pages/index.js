@@ -8,7 +8,7 @@ import runLegacyScripts from '@/components/legacy';
 import { useEffect }  from 'react';
 import $ from "jquery";
 import { useRouter } from 'next/router';
-import ContactUsForm from '@/components/ContactUS';
+import ContactUsForm from '@/components/ContactUs';
 
 export default function Home() {
   
