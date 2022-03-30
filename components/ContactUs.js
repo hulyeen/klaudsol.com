@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from 'axios';
-import AlertModal from "./alert_modal";
+import AlertModal from "./AlertModal";
 export default function ContactUsForm(){
 
     const [name, setName] = useState('');
