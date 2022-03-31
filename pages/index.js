@@ -615,6 +615,7 @@ export default function Home() {
     News area end */}
   {/* Subscribe area starts */}
   <section id="subscribe" className="subscribe-area section-big">
+    {/*}
     <div className="container">
       <div className="row">
         <div className="col-md-12 text-center">
@@ -644,21 +645,21 @@ export default function Home() {
                 you, promise.
               </p>
               <div className="clearfix" />
-              {/* mailchimp-alerts Start */}
+              {/* mailchimp-alerts Start 
               <div className="mailchimp-alerts">
                 <div className="mailchimp-submitting" />
-                {/* mailchimp-submitting end */}
+                {/* mailchimp-submitting end 
                 <div className="mailchimp-success" />
-                {/* mailchimp-success end */}
+                {/* mailchimp-success end 
                 <div className="mailchimp-error" />
-                {/* mailchimp-error end */}
+                {/* mailchimp-error end 
               </div>
-              {/* mailchimp-alerts end */}
+              {/* mailchimp-alerts end 
             </div>
           </form>
         </div>
       </div>
-    </div>
+  </div> */}
   </section>
   {/* Subscribe area ends */}
   
