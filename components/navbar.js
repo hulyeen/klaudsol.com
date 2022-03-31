@@ -22,6 +22,7 @@ export default function Navbar({navset = 'default'}){
                           style={{ position: "relative", top: 5 }}/>
                   </a>
                 </Link>
+                {/*}
                 <button
                     type="button"
                     className="navbar-toggle"
@@ -32,7 +33,7 @@ export default function Navbar({navset = 'default'}){
                     <span className="icon-bar" />
                     <span className="icon-bar" />
                     <span className="icon-bar" />
-                </button>
+             </button>*/}
             </div>
 
             <div className="navbar-collapse collapse">
