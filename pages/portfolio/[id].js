@@ -1,10 +1,9 @@
 import React from  'react'; 
-import Footer from '@/components/footer'
-import Navbar from '@/components/navbar';
+import Footer from '@/components/Footer'
+import Navbar from '@/components/NavBar';
 import { useRouter } from "next/router";
-import portfolio_content from "@/components/portfolio_content.json"
-import Script from 'next/script';
-import runLegacyScripts from '@/components/legacy';
+import portfolio_content from "@/components/PortfolioContent.json"
+import runLegacyScripts from '@/components/Legacy';
 import { useEffect }  from 'react';
 import $ from "jquery";
 

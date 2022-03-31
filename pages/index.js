@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import Navbar from '@/components/navbar';
-import Portfolio from '@/components/portfolio';
-import Footer from '@/components/footer';
-import runLegacyScripts from '@/components/legacy';
+import Navbar from '@/components/NavBar';
+import Portfolio from '@/components/Portfolio';
+import Footer from '@/components/Footer';
+import runLegacyScripts from '@/components/Legacy';
 import { useEffect }  from 'react';
 import $ from "jquery";
-import { useRouter } from 'next/router';
 import ContactUsForm from '@/components/ContactUs';
 
 export default function Home() {

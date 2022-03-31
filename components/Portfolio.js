@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect } from 'react';
 import $ from "jquery";
-import mixItUp from '@/components/jquery.mixitup';
+import mixItUp from '@/components/Jquery.mixitup';
 
 const Portfolio = () =>{
   
