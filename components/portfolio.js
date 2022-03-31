@@ -115,8 +115,7 @@ const Portfolio = () =>{
                           <div className="overlay-text">
                             <h3>Sarisuki</h3>
                             <p>
-                              Sunt ullamco minim irure deserunt sit aute cillum ex reprehenderit non Lorem do. 
-                              Occaecat sit enim dolor ea ut proident quis nulla minim laborum dolore ex. 
+                            Buy groceries online. All daily essentials delivered to you.
                             </p>
                           </div>
                         </div>

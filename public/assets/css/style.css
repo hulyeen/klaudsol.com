@@ -1854,9 +1854,10 @@ a.klaudsol-tech-link:hover {
 }
 
 .txt_mainTitle {
-  color: #000;
+  color: #0f1d44;
   font-weight: bold;
   font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .txt_description {
@@ -1868,6 +1869,7 @@ a.klaudsol-tech-link:hover {
   text-align: center;
   font-size: larger;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .img_container {
