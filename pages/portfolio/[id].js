@@ -22,7 +22,7 @@ export default function Content() {
     <>
             <Navbar navset="portfolio"/>
             <div>
-            <div className='container container_main'>
+            <div className='container_main'>
                 <div className='row'>
                     <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 '>
                         <div className='text_container text-center col-xl-12'> 
@@ -43,10 +43,10 @@ export default function Content() {
                     <p className="p2">{p_content.desc2}</p>                       
                 </div>*/}
                 </div>
+                <Footer/>
             </div>
-            <Footer/>
             </div>
-     
+            
     </>
   );
 };

@@ -1672,7 +1672,8 @@ fieldset {
 
 @media (max-width: 991px) {
   .contact-info,
-  .contact-form {
+  .contact-form,
+  .footer-area {
     width: 100%;
   }
 
