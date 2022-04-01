@@ -38,7 +38,7 @@ export default function Content() {
                 </div>
                 <div className="about-container">
                   <div className="about-text">
-                      <p className="p1">WHAT WE DO</p>
+                      <p className="p1">Technology Stack</p>
                       {p_content.tech.map((tech) => (
                         <p key = {tech.id}className='p2'>{tech}</p>
                       ))}
