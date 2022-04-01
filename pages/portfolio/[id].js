@@ -39,11 +39,9 @@ export default function Content() {
                 <div className="about-container">
                   <div className="about-text">
                       <p className="p1">WHAT WE DO</p>
-                      <p className="p2">{p_content.tech[0]}</p>     
-                      <p className="p2">{p_content.tech[1]}</p> 
-                      <p className="p2">{p_content.tech[2]}</p> 
-                      <p className="p2">{p_content.tech[3]}</p>    
-                      <p className="p2">{p_content.tech[4]}</p>
+                      {p_content.tech.map((tech) => (
+                        <p key = {tech.id}className='p2'>{tech}</p>
+                      ))}
                   </div>
                 </div>
                 <Footer/>
