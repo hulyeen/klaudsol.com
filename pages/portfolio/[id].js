@@ -7,16 +7,16 @@ import runLegacyScripts from '@/components/Legacy';
 import { useEffect }  from 'react';
 import $ from "jquery";
 
-
 export default function Content() {
     
   useEffect(() => {
     runLegacyScripts($);
   }, []);
-  
+
   const router = useRouter();
   const p_content = portfolio_content[router.query.id];
   if (!p_content) return <p></p>;
+ 
   return (
     <>
             <Navbar navset="portfolio"/>
@@ -39,11 +39,11 @@ export default function Content() {
                 <div className="about-container">
                   <div className="about-text">
                       <p className="p1">WHAT WE DO</p>
-                      <p className="p2">{p_content.tech1}</p>     
-                      <p className="p2">{p_content.tech2}</p> 
-                      <p className="p2">{p_content.tech3}</p> 
-                      <p className="p2">{p_content.tech4}</p>    
-                      <p className="p2">{p_content.tech5}</p>       
+                      <p className="p2">{p_content.tech[0]}</p>     
+                      <p className="p2">{p_content.tech[1]}</p> 
+                      <p className="p2">{p_content.tech[2]}</p> 
+                      <p className="p2">{p_content.tech[3]}</p>    
+                      <p className="p2">{p_content.tech[4]}</p>
                   </div>
                 </div>
                 <Footer/>

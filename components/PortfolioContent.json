@@ -6,10 +6,7 @@
         "desc1": "GoodReadR is an app for online bookstore owners. It adds a Goodreads review widget on your Shopify store",
         "image1":"../assets/img/work/p1.png",
         "site": "https://apps.shopify.com/goodreadr-book-reviews-1",
-        "tech1": "Koa (Node.js)",
-        "tech2": "React",
-        "tech3": "Shopify Polaris",
-        "tech4": "Upstash Redis"
+        "tech": ["Koa (Node.js)", "React", "Shopify Polaris", "Upstash Redis"]
     },
     "sme": {
         "_id":"2",
@@ -17,10 +14,7 @@
         "desc1": " SME is an accounting, inventory, procurement, and payroll system specifically tailored for Philippine small and medium-scale businesses.",
         "image1":"../assets/img/work/p2.png",
         "site": "https://sme.klaudsol.app/",
-        "tech1": "Next.js 11 (Node.js 14)",
-        "tech2": "React 17",
-        "tech3": "AWS Amplify",
-        "tech4": "AWS Aurora Serverless"
+        "tech": ["Next.js 11 (Node.js 14)", "React 17", "AWS Amplify", "AWS Aurora Serverless"]
     },
     "doorbell": {
         "_id":"3",
@@ -28,11 +22,7 @@
         "desc1": "Doorbell is an app built for real estate agents and investors. Doorbell allows you to be notified via SMS or email if there is a foreclosed property in the market that suits your needs.",
         "image1":"../assets/img/work/p3.png",
         "site": "https://doorbell.klaudsol.app/",
-        "tech1": "Next.js 11 (Node.js 14)",
-        "tech2": "React 17",
-        "tech3": "AWS Amplify",
-        "tech4": "AWS Aurora Serverless",
-        "tech5": "Puppeteer"
+        "tech": ["Next.js 11 (Node.js 14)", "React 17", "AWS Amplify", "AWS Aurora Serverless", "Puppeteer"]
     },
     "sarisuki": {
         "_id":"4",
@@ -40,10 +30,8 @@
         "desc1": "Buy groceries online. All daily essentials delivered to you.",
         "image1":"../assets/img/work/p4.png",
         "site":"https://sarisuki.com/",
-        "tech1": "Next.js 12 (Node.js 16)",
-        "tech2": "React 17",
-        "tech3": "AWS Amplify",
-        "tech4": "AWS Aurora Serverless"
+        "tech": ["Next.js 12 (Node.js 16)", "React 17", "AWS Amplify", "AWS Aurora Serverless"]
     }
 }
+
 
