@@ -40,7 +40,7 @@ export default function Content() {
                   <div className="about-text">
                       <p className="p1">Technology Stack</p>
                       {p_content.tech.map((tech) => (
-                        <p key = {tech.id}className='p2'>{tech}</p>
+                        <p key={tech} className='p2'>{tech}</p>
                       ))}
                   </div>
                 </div>
