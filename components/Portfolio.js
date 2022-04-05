@@ -2,9 +2,9 @@ import Link from "next/link";
 import { useEffect } from 'react';
 import $ from "jquery";
 import mixItUp from '@/components/Jquery.mixitup';
-
+import portfolio_content from "@/components/PortfolioContent.json"
 const Portfolio = () =>{
-  
+
     useEffect(() => {
       mixItUp($);
       $('.portfolio').mixItUp();
@@ -42,7 +42,7 @@ const Portfolio = () =>{
               </ul>
               <div className="portfolio">
                 <div className="row work-items">
-                  <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate shopify">
+                  <div className="col-md-4 col-sm-6 col-xs-12 mix illustrate shopify">
                     <div className="item">
                     <Link href="/portfolio/goodreadr">
                       <a data-title="GoodReadR">
@@ -63,7 +63,7 @@ const Portfolio = () =>{
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix dev biz">
+                  <div className="col-md-4 col-sm-6 col-xs-12 mix dev biz">
                     <div className="item">
                     <Link href="/portfolio/sme">
                       <a data-title="SME">
@@ -85,7 +85,7 @@ const Portfolio = () =>{
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate typography web biz">
+                  <div className="col-md-4 col-sm-6 col-xs-12 mix illustrate typography web biz">
                     <div className="item">
                     <Link href="/portfolio/doorbell">
                       <a data-title="Doorbell">
@@ -106,7 +106,7 @@ const Portfolio = () =>{
                     </div>
                   </div>
 
-                  <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix illustrate typography web biz">
+                  <div className="col-md-4 col-sm-6 col-xs-12 mix illustrate typography web biz">
                     <div className="item">
                     <Link href="/portfolio/sarisuki">
                       <a data-title="Sarisuki">
@@ -116,6 +116,24 @@ const Portfolio = () =>{
                             <h3>Sarisuki</h3>
                             <p>
                             Buy groceries online. All daily essentials delivered to you.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="col-md-4 col-sm-6 col-xs-12 mix illustrate typography web biz">
+                    <div className="item">
+                    <Link href="/portfolio/healthnow">
+                      <a data-title="HealthNow">
+                        <img src="assets/img/work/p5.png" alt='' />
+                        <div className="overlay">
+                          <div className="overlay-text">
+                            <h3>HealthNow</h3>
+                            <p>
+                            HealthNow brings health and care to every person in one tap.
                             </p>
                           </div>
                         </div>
