@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #FFF;
 }
 
 .navitem {
@@ -76,10 +77,12 @@
     }
 
     .navlink:hover{
-        color: #FFF;
+        color: #222222;
         cursor: pointer;
     }
-
+    .navlink{
+        color: #FFF;
+    }
     .navitem {
         margin: 3rem 0;
     }
