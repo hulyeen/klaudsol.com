@@ -59,21 +59,21 @@
 @media only screen and (max-width: 986px) {
     .navmenu {
         position: absolute;
-        left: -120%;
-        top: 8.5rem;
+        left:0;
+        top: -55rem;
         flex-direction: column;
         background-color: rgb(185, 184, 114);
         opacity: 0.9;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 1s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .navmenu.active {
         color: rgb(185, 184, 114);
-        left: 0;
+        top: 8.5rem;
     }
 
     .navlink:hover{
