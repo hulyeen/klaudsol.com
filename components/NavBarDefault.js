@@ -1,45 +1,56 @@
 import Link from "next/link";
-import cx from 'classnames';
+import { useState } from "react"
+import styles from "../styles/Layout.module.css"
+
 export default function NavBarDefault() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openMenu = () => setIsOpen(!isOpen);
     return (
       <>
-                <ul className="nav navbar-nav navbar-right">
-                  <li className="active">
+                <ul className={isOpen === false ? 
+                              styles.navmenu : styles.navmenu + ' ' + styles.active}>
+                  <li className={styles.navitem}>
                     <Link href="/">
-                      <a>
-                        HOME
-                      </a>
+                      <a className={styles.navlink}> HOME </a>
                     </Link>
                   </li>
-            
-                  <li>
-                    <a className="smooth_scroll" href="#whatwedo">
+
+                  <li className={styles.navitem}>
+                    <a className={styles.navlink + ' ' + "smooth_scroll"} href="#whatwedo">
                       WHAT WE DO
                     </a>
                   </li>
 
-                  <li>
-                    <a className="smooth_scroll" href="#aboutus">
+                  <li className={styles.navitem}>
+                  <a className={styles.navlink + ' ' + "smooth_scroll"} href="#aboutus">
                       ABOUT US
                     </a>
                   </li>
-
-                  <li>
-                    <a className="smooth_scroll" href="#work">
+                  
+                  <li className={styles.navitem}>
+                  <a className={styles.navlink + ' ' + "smooth_scroll"}  href="#work">
                       PORTFOLIO
                     </a>
                   </li>
 
-                  <li>
-                    <a href="https://blog.klaudsol.com/">READ OUR BLOG</a>
+                  <li className={styles.navitem}>
+                    <a className={styles.navlink}  href="https://blog.klaudsol.com/"> READ OUR BLOG </a>
                   </li>
 
-                  <li>
-                    <a className="smooth_scroll" href="#contact">
+                  <li className={styles.navitem}>
+                  <a className={styles.navlink + ' ' + "smooth_scroll"} href="#contact">
                       CONTACT
                     </a>
                   </li>
                 </ul>
+                <button className={isOpen === false ? styles.hamburger : 
+                                          styles.hamburger + ' ' + styles.active}
+                                          onClick={openMenu}
+                                          >
+                          <span className={styles.bar}></span>
+                          <span className={styles.bar}></span>
+                          <span className={styles.bar}></span>
+                      </button>
       </>
     )
 }
