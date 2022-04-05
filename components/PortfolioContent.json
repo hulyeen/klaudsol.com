@@ -31,6 +31,14 @@
         "image1":"../assets/img/work/p4.png",
         "site":"https://sarisuki.com/",
         "tech": ["Next.js 12 (Node.js 16)", "React 17", "AWS Amplify"]
+    },
+    "healthnow": {
+        "_id":"5",
+        "name":"HealthNow",
+        "desc1": "HealthNow brings health and care to every person in one tap.",
+        "image1":"../assets/img/work/p5.png",
+        "site":"https://healthnow.ph/",
+        "tech": ["React", "Next.js", "Node.js (TypeScript)"]
     }
 }
 
