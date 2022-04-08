@@ -1,6 +1,7 @@
 import styles from "../styles/Layout.module.css"
 import NavBarDefault from '@/components/NavBarDefault';
 import NavBarPortfolio from '@/components/NavBarPortfolio';
+import Link from "next/link";
 
 export default function Navbar({navset = 'default'}){
   return(
@@ -11,12 +12,14 @@ export default function Navbar({navset = 'default'}){
                 <div className="col-md-12">
                   <div className="mainmenu">
                         <nav className={styles.navbar}>
+                        <Link href = "/">
                           <a className="navbar-brand">
                           <img
                           src="/assets/img/logo-180x180.png"
                           alt=''
                           style={{ position: "relative", top: 5 }}/>
                           </a>
+                        </Link>
                           {navset === 'default' && (
                             <NavBarDefault /> 
                           )}
@@ -24,6 +27,7 @@ export default function Navbar({navset = 'default'}){
                           {navset === 'portfolio' && (
                             <NavBarPortfolio />
                           )}
+                        
                       </nav>
                 
                   </div> {/** mainmenu close*/}
